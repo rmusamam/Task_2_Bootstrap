@@ -1,0 +1,19 @@
+.about-heading h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+    height: 2px;
+}
+.description-detail-brief{
+    font-style: italic;
+}
+.greater-than-symbol{
+    color: blue;
+}
+.para-date{
+    color: grey;
+}
+.About-describe p{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
