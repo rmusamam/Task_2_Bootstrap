@@ -1,3 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,'sans-serif';
+}
+header{
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #343747;
+    background-image: url(./photos/Templete.png);
+}
+.wrapper{
+    display: inline-flex;
+    background-color: rgb(0, 255, 170);
+}
+
+.dynamic-txts{
+    padding-left: 0%;
+}
+.wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+.wrapper .dynamic-txts{
+    margin:15px;
+    height:80px;
+    line-height: 90px;
+    overflow: hidden;
+
+}
+.dynamic-txts li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: rgb(255, 111, 28);
+}
+
+.dynamic-txts li span::before {
+    content:"YouTuber";
+    position:absolute;
+   
+
+
+    /* background: #42778f; */
+    /* border-left: 2px solid rgb(255, 111, 28); */
+    animation: slide 2s steps(2) infinite;
+
+}
+
+.dynamic-txts li span{
+    position: relative;
+}
+
+
+@keyframes slide {
+   100%{
+       top:-360px;
+   }
+  
+}
+
+
 .about-heading h4{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,3 +85,100 @@
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+
+
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+
+
+.facts {
+    margin-top:7%;
+    font-family:sans-serif ;
+    font-family: "Raleway", sans-serif;
+}
+
+.facts-para p span {
+    font-family:sans-serif ;
+    margin-left: 23%;
+    
+}
+
+.facts .count-box {
+    padding: 30px 30px 25px 30px;
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .facts .count-box i {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 244px;
+    background: #0563bb;
+    padding: 32px;
+    color: #fff;
+    border-radius: 50px;
+  }
+  
+  .facts .count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #011426;
+  }
+  
+  .facts .count-box p {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+  }
+  
+
+
+
+/* 
+  <!-- -------------------------
+  Start of Skills Section # 4
+------------------------------> */
+
+
+  .skills .progress {
+    height: 50px;
+    display: block;
+    background: none;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #f2f3f5;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #0563bb;
+  }
+  
